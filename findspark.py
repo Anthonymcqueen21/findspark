@@ -3,17 +3,14 @@
 If SPARK_HOME is defined, it will be used to put pyspark on sys.path.
 Otherwise, common locations for spark (currently only Homebrew's default) will be searched.
 """
-
 from glob import glob
 import os
 import sys
 
 __version__ = '1.4.0.dev'
 
-
 def find():
     """Find a local spark installation.
-
     Will first check the SPARK_HOME env variable, and otherwise
     search common installation locations, e.g. from homebrew
     """
